@@ -1,0 +1,113 @@
+/***** ESTILO ******/
+
+/* ESTILO GENERAL */
+
+body {background-color: rgb(236, 195, 223);}
+
+#wrapper {width: 95%;
+            margin: auto;}
+
+
+/*** ESTILO HEADER ***/
+
+header {background-image: url("imagenes/header.jpg");
+        background-position: left;
+        background-size: cover;
+        height: 240px;
+        margin-top: 0;}
+
+header h1 {color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: black 1px 1px 1px;
+            position: absolute;
+            top: 70px;
+            left:250px;}
+
+
+/**** ESTILO NAV *****/
+
+nav {background-color: rgb(69, 144, 214);}
+
+nav ul {margin: 0;
+        list-style-type: none;}
+
+nav ul li {display: inline-block;
+            padding: 1%;}
+
+nav ul li a {color:white;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+nav ul li a:hover {color:rgb(236, 104, 166);}
+
+
+/**** ESTILO MAIN *****/
+
+main {background-color: rgb(219, 219, 219);
+    padding: 1%;}
+
+main h1 {text-align: center;
+        color: rgb(236, 104, 166);
+        margin-top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+main p {color: rgb(0, 0, 0);
+        text-align: justify;
+        text-indent: 3em;
+        font-size: 20px;
+        margin: 2%;}
+
+main img {width: 20%;
+            margin: 2%;
+            box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+            border-radius: 10px 10px 10px 10px;}
+
+main img:hover {opacity: 0.5;}
+
+main ul {font-size: 20px;}
+
+
+
+/**** ESTILO FOOTER *****/
+
+footer {background-color:rgb(69, 144, 214);
+    padding: 1.5%;
+    }
+
+footer p {text-align: center;
+    margin: 0;
+    font-size: 1em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+
+/*** MEDIA QUERIES *****/
+
+
+/* TABLET */
+
+@media only screen and (max-width:900px){
+    main img {width: 40%;
+                    margin: 4%;}
+    header {background-position: right;}
+    header h1 {position: absolute;
+                top: 70px;
+                left:70px;}
+    nav ul li {display: inline-block;
+                margin: 2%;}
+}
+
+
+
+/* MOVIL */
+
+@media only screen and (max-width:600px){
+    main img {width: 70%;
+        margin: 8%;}
+    header {background-image: url("imagenes/header2.png");}
+    header h1 {text-align: center;}
+    nav ul li {display: list-item;
+            padding: 3%;}
+}
